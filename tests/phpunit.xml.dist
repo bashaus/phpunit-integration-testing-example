@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./bootstrap.php"
+         colors="true"
+         strict="true"
+         verbose="false"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader">
+    <php>
+        <env name="DATABASE_HOSTTYPE" value="" />
+        <env name="DATABASE_HOSTNAME" value="" />
+        <env name="DATABASE_USERNAME" value="" />
+        <env name="DATABASE_PASSWORD" value="" />
+        <env name="DATABASE_DATABASE" value="" />
+    </php>
+
+    <testsuites>
+        <testsuite name="Acme Test Suite">
+            <directory>Acme</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="Acme/coverage" charset="UTF-8"
+            yui="false" highlight="true" lowUpperBound="60" highLowerBound="90" />
+    </logging>
+</phpunit>
