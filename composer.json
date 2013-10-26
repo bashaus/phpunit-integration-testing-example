@@ -2,5 +2,14 @@
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
         "phpunit/dbunit": ">=1.2"
+    },
+    "require": {
+        "php-activerecord/php-activerecord": "dev-master"
+    },
+    "config": {
+    	"bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": { "IntegrationTest": "src/" }
     }
 }

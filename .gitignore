@@ -1,5 +1,7 @@
-phpunit.phar
 composer.phar
+bin/
 vendor/
-tests/Acme/coverage/
-tests/phpunit.xml
+
+phpunit.xml
+
+tests/IntegrationTest/coverage/

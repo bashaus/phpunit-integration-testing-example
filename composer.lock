@@ -3,9 +3,43 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "4d7927ca7f863b901c19c0b8dd061c14",
+    "hash": "5e8b127f008862d66c6aaafed453050f",
     "packages": [
-
+        {
+            "name": "php-activerecord/php-activerecord",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kla/php-activerecord.git",
+                "reference": "0100b0de53e91b1ac3951bdea050cfa18b587ba2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kla/php-activerecord/zipball/0100b0de53e91b1ac3951bdea050cfa18b587ba2",
+                "reference": "0100b0de53e91b1ac3951bdea050cfa18b587ba2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "ActiveRecord.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "php-activerecord is an open source ORM library based on the ActiveRecord pattern.",
+            "homepage": "http://www.phpactiverecord.org/",
+            "keywords": [
+                "activerecord",
+                "orm"
+            ],
+            "time": "2013-05-07 20:57:49"
+        }
     ],
     "packages-dev": [
         {
@@ -485,9 +519,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "php-activerecord/php-activerecord": 20
+    },
     "platform": [
 
     ],
